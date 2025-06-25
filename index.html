@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Life Experiences</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Life Experiences Vocabulary</h1>
+  
+    <p class="instructions">
+      Type the missing word or phrase in each blank. Hover the <strong>?</strong> for a hint,  
+      then click <em>Check&nbsp;your&nbsp;score</em> to see how you did.
+    </p>
+  
+    <p>
+      Many people
+      <span class="blank" data-answer="have struggled">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">had difficulty</span>
+      </span>
+      with loneliness at some point in life.
+  
+      My grandfather
+      <span class="blank" data-answer="passed away">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">died peacefully</span>
+      </span>
+      last year, and we all
+      <span class="blank" data-answer="gathered">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">met together as a family</span>
+      </span>
+      to share memories.
+  
+      Some elderly people live
+      <span class="blank" data-answer="alone">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">not with others</span>
+      </span>
+      and feel isolated.
+  
+      I
+      <span class="blank" data-answer="have learned">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">gained new knowledge</span>
+      </span>
+      to value time with my grandparents more.
+  
+      We often
+      <span class="blank" data-answer="talk">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">speak with someone</span>
+      </span>
+      about their childhood and family stories.
+    </p>
+    <button id="check">Check your score</button>
+  </div>  
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
