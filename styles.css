@@ -1,3 +1,4 @@
+
 /* ---------- BASE ---------- */
 *,
 *::before,
@@ -30,11 +31,18 @@ body {
 }
 
 @keyframes bgMove {
-  0%   { background-position: 0 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0 50%; }
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
+/* ---------- CARD ---------- */
 .card {
   max-width: 780px;
   width: 100%;
@@ -67,7 +75,7 @@ p {
 .blank {
   display: inline-block;
   position: relative;
-  margin: 0 0.35rem 0.55rem;
+  margin: 8px 0;
   vertical-align: middle;
 }
 
@@ -179,20 +187,6 @@ button:hover {
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 1.2rem;
-  }
-
-  .card {
-    padding: 1.8rem;
-  }
-
-  .blank input {
-    width: 100%;
-  }
-}
-
 /* ---------- VIDEO BG ---------- */
 #bg-video {
   position: fixed;
@@ -265,9 +259,21 @@ button:hover {
 }
 
 @keyframes shake {
-  0%   { transform: translateX(0); }
-  25%  { transform: translateX(-4px); }
-  50%  { transform: translateX(4px); }
-  75%  { transform: translateX(-4px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
+
